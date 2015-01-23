@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+  <h1>This is the home page</h1>
+  <p>These are all the timers</p>
+  <ul>
+    {% for timer in timers %}
+      <li><a href="#">{{ timer.description }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
